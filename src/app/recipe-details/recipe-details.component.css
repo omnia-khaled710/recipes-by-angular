@@ -1,0 +1,23 @@
+.fa-heart.active {
+  color: #F07D21;
+
+}
+.title{
+  color: #F07D21;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 22px;
+}
+.heart-icon{
+  position: relative;
+}
+.heart-icon i {
+  cursor: pointer;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 40%;
+  padding: 8px;
+  font-size: 22px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}

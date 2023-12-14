@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+.card
+{
+  margin-top: 2rem;
+  border: #F07D21 1px solid;
+  border-radius: 8px;
+  /* outline-style: solid;
+  outline-color: #F07D21; */
+  color: #A3A2A1;
+  height: 38rem;
+}
+.card-title{
+  color: #F07D21;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 18px;
+}
+.heart-icon {
+  cursor: pointer;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 40%;
+  padding: 8px;
+  font-size: 10px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.fa-heart.active {
+  color: #F07D21;
+
+}
+.fa-heart{
+  font-size: 25px;
+}
+p{
+  font-size: 20px;
+}
+
+p::after {
+  border-bottom: 4px solid #adb5bd24;
+  content: '';
+  border-radius: 25px;
+  position: absolute;
+  left: 25px;
+  right: 37px;
+  bottom: 50px;
+};

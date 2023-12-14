@@ -1,0 +1,35 @@
+
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo/images.png" width="100px" height="50px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="center d-flex justify-content-center mx-auto">
+            <ul class="navbar-nav mb-2 mb-lg-0" style="display: grid; grid-template-columns: repeat(4, auto); gap: 20px;">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="recipes" routerLinkActive="active">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="favorite-recipes" routerLinkActive="active">Favorite</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="input-search">
+              <div class="input-group">
+                <i class="fas fa-search"></i>
+                <input  [(ngModel)]="searchValue" class="form-control  rounded"/>
+                <button type="button" class="btn btn-dark" (click)="updateSearch()" data-mdb-ripple-init>search</button>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+

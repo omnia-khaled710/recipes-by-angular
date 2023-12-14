@@ -1,0 +1,17 @@
+<div class="row pt-5">
+  <div class="col-md-4">
+    <div class="heart-icon" (click)="toggleFavorite(recipeDetails?.recipe)">
+      <i class="fa fa-heart" [ngClass]="{'active': recipeDetails?.recipe.favorite}" aria-hidden="true"></i>
+      <img class="img-fluid" [src]="recipeDetails?.recipe.image_url" alt="">
+    </div>
+  </div>
+  <div class="col-md-8">
+      <h2 class="mb-4 title">{{recipeDetails?.recipe.title}}</h2>
+      <h5 class="mb-2">Ingredients:</h5>
+      <ol>
+        <li *ngFor="let recipe of recipeDetails?.recipe.ingredients" class="mb-3 ms-5">
+          {{recipe}}
+        </li>
+      </ol>
+  </div>
+</div>

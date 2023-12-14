@@ -1,0 +1,70 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@900&display=swap');
+
+li{
+font-family: 'Kaushan Script', cursive;
+font-size: 1.2rem;
+/* text-align: center; */
+}
+
+input{
+  border: 2px solid rgb(248, 248, 248);
+  border-radius: 5px !important;
+}
+button{
+  border: 2px solid rgb(186, 194, 243);
+  border-radius: 5px !important;
+}
+
+.active{
+  color: #F07D21 !important;
+  border-bottom: #F07D21 3px solid;
+}
+.fas, .fa-solid {
+  margin-top: 10px;
+  margin-right: -25px;
+}
+
+.input-group{
+position: relative;
+width: 500px;
+height: 50px;
+font-family: 'Kaushan Script', cursive;
+/* background-color: blue; */
+}
+
+.input-group input{
+
+  width: 100%;
+  height: 100%;
+  border-radius:40px !important;
+  border: 1px solid silver;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-left: 100px;
+}
+
+.input-group button{
+  border: none;
+  border-radius:40px !important;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 25%;
+font-size: 20px;
+z-index: 1000;
+
+}
+
+
+.input-group i{
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  /* height: 10px; */
+  transform: translateY(-22px);
+  font-size: 30px;
+z-index: 1000;
+}

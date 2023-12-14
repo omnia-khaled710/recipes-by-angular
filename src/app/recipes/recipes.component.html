@@ -1,0 +1,31 @@
+<div class="row">
+  <div *ngFor="let recipe of recipes| paginate:{ itemsPerPage: itemsPerPage, currentPage: currentPage } " class="col-md-4 my-3">
+    <div  class="card" >
+      <div class="heart-icon" (click)="toggleFavorite(recipe)">
+        <i class="fa fa-heart" [ngClass]="{'active': recipe.favorite}" aria-hidden="true"></i>
+      </div>
+      <img [routerLink]="['/recipe-details',recipe.recipe_id]" class="card-img-top" [src]="recipe.image_url" height="50%" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title mb-4">{{recipe.title}}</h4>
+        <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          <div class="likes" style="margin-bottom: 20px;  color: #F07D21;">
+            <i class="fa-regular fa-clock" style="margin-left: 17px;"></i>
+             <span class="mt-4" style="margin-right: 30px;"> 45 mins</span>
+            <i class="fa-regular fa-thumbs-up "></i>
+            <span class="mt-4"> 2</span>
+
+          </div>
+    </div>
+  </div>
+</div>
+<div>
+  <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+</div>
+
+<!--
+  <div *ngFor="let item of items | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }">
+  {{ item }}
+</div>
+
+ -->
