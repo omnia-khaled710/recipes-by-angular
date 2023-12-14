@@ -26,6 +26,14 @@ searchValue: string = '';
 
   constructor(private searchService: SearchService) {}
   updateSearch() {
+    console.log(this.searchValue);
+    
+    this.searchService.setSearchValue(this.searchValue);
+    
+    
+  }
+
+  submitSearch() {
     this.searchService.setSearchValue(this.searchValue);
   }
 }

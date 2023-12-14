@@ -9,22 +9,41 @@ import { SearchService } from '../services/search.service';
 
 export class RecipesComponent {
   recipes: any[] = [];
+  filteredRecipes: any[] = [];
   favorites: any[] = [];
-  searchValue:string='dscewsdwedx';
+  searchValue:string='';
   items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]; // your list of items
   currentPage = 1; // start with the first page
   itemsPerPage = 5; // show 5 items per page
 
-  constructor(private _RecipesServices: RecipesService,_SearchService: SearchService) {
+  constructor(private _RecipesServices: RecipesService,private _SearchService: SearchService) {
     _RecipesServices.getRecipes().subscribe((data) => {
       this.recipes = data.recipes;
-        this.searchValue = _SearchService.searchValue
-        console.log(this.searchValue);
-    });
+       
+    }
+    );
 
     // Load favorites from local storage
     const storedFavorites = localStorage.getItem('favorites');
     this.favorites = storedFavorites ? JSON.parse(storedFavorites) : [];
+
+  }
+  ngOnInit() {
+    // Subscribe to search value changes
+    this._SearchService.searchValue$.subscribe((value) => {
+      this.searchValue = value;
+      this.filterRecipes();
+      
+
+      
+    });
+  }
+
+
+  getSearchValue () { 
+    this._SearchService.searchValue$.subscribe((value) => {
+      this.searchValue = value;
+    });
   }
 
   toggleFavorite(recipe: any): void {
