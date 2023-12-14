@@ -7,7 +7,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 import { FavoriteRecipesComponent } from './favorite-recipes/favorite-recipes.component';
-import { HomeComponent } from './home/home.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
@@ -19,7 +18,6 @@ import { SearchPipe } from './pipe/search.pipe';
     RecipesComponent,
     RecipeDetailsComponent,
     FavoriteRecipesComponent,
-    HomeComponent,
     SearchPipe,
   ],
   imports: [
