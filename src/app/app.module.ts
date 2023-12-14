@@ -10,7 +10,7 @@ import { FavoriteRecipesComponent } from './favorite-recipes/favorite-recipes.co
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
-import { SearchPipe } from './pipe/search.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,7 @@ import { SearchPipe } from './pipe/search.pipe';
     RecipesComponent,
     RecipeDetailsComponent,
     FavoriteRecipesComponent,
-    SearchPipe,
+  
   ],
   imports: [
     BrowserModule,
