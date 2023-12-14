@@ -1,27 +1,44 @@
-# RecipeApp
+# Recipe Finder Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+## Overview
 
-## Development server
+This project is a recipe finder application that allows users to explore and save their favorite recipes. It integrates with the recipe API to fetch random recipes and provides features such as searching, saving favorites, and viewing detailed recipe information.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+1. **Home View:**
+   - Display a list of random recipes with relevant information.
+   - Allow users to search for recipes.
+   - Enable users to save their favorite recipes in local storage.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Favorites View:**
+   - Same as the home view but displays the user's saved recipes.
 
-## Running unit tests
+3. **Recipe Details View:**
+   - View detailed information about a selected recipe, including title, price, summary, ingredients, and instructions.
+   
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
 
-## Running end-to-end tests
+- Angular 16+
+-  Recipe API
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Installation
 
-## Further help
+1. Clone the repository: `git clone [repository_url]`
+2. Install dependencies: `npm install`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage
+
+1. Run the application: `ng serve`
+2. Open your browser and navigate to `http://localhost:4200`
+
+---
+
